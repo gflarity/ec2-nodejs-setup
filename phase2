@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+#Install nvm, it handles all the installation for us
+git clone git://github.com/creationix/nvm.git ~/.nvm
+sudo . /.nvm/nvm.sh
+echo -e -n "\n. ~/.nvm/nvm.sh\n" >> ~/.bashrc
+
+#Setup npm, this makes life much easier:
+mkdir ~/git
+cd ~/git
+git clone https://github.com/isaacs/npm.git
+cd npm/
+make install
+
+
