@@ -10,6 +10,7 @@ nvm sync
 time nvm install latest
 nvm use latest
 
+#setup the nodejs user's enviroment to have that latest nodejs in it's path
 echo -e -n "\n. ~/.nvm/nvm.sh\n" >> ~/.bashrc
 echo -e -n "\nnvm use latest\n" >> ~/.bashrc
 
