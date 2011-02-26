@@ -3,10 +3,15 @@
 #Install nvm, it handles all the installation for us
 git clone git://github.com/creationix/nvm.git ~/.nvm
 . ~/.nvm/nvm.sh
-echo -e -n "\n. ~/.nvm/nvm.sh\n" >> ~/.bashrc
+
 
 #install nodejs
-time nvm install v0.4.1
+nvm sync
+time nvm install latest
+nvm use latest
+
+echo -e -n "\n. ~/.nvm/nvm.sh\n" >> ~/.bashrc
+echo -e -n "\nnvm use latest\n" >> ~/.bashrc
 
 #Setup npm, this makes life much easier:
 mkdir ~/git
