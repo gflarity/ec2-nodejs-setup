@@ -6,7 +6,7 @@ git clone git://github.com/creationix/nvm.git ~/.nvm
 echo -e -n "\n. ~/.nvm/nvm.sh\n" >> ~/.bashrc
 
 #install nodejs
-nvm install v0.4.1
+time nvm install v0.4.1
 
 #Setup npm, this makes life much easier:
 mkdir ~/git

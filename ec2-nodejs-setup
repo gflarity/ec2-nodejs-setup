@@ -4,5 +4,5 @@ apt-get install build-essential libssl-dev git-core
 adduser --home /home/nodejs --shell /bin/bash --disabled-password --disabled-login --system nodejs
 
 #as the user, we run the rest of setup process
-sudo -u nodejs ./phase2
+sudo -i -u nodejs `pwd`/phase2
 
